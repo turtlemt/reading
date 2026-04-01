@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Yellow-Throated Marten</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #f5f3ee;
+      color: #1a1a1a;
+      padding: 2rem 1rem 4rem;
+      line-height: 1.7;
+    }
+
+    .wrap { max-width: 740px; margin: 0 auto; }
+
+    /* Hero */
+    .hero {
+      background: #fff;
+      border-radius: 14px;
+      border: 1px solid #e0ddd6;
+      padding: 1.75rem 2rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .tag {
+      display: inline-block; font-size: 12px; font-weight: 600;
+      font-family: Arial, sans-serif;
+      background: #e6f4ec; color: #2d7a4f;
+      border-radius: 6px; padding: 3px 12px; margin-bottom: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+    .hero h1 {
+      font-size: 26px; font-weight: 700; margin-bottom: 0.25rem; color: #111;
+    }
+    .hero .sub { font-size: 14px; color: #666; font-family: Arial, sans-serif; }
+    .meta { display: flex; gap: 1.5rem; margin-top: 1rem; flex-wrap: wrap; }
+    .meta-item { font-size: 13px; color: #666; font-family: Arial, sans-serif; }
+    .meta-item strong { color: #222; font-weight: 600; }
+
+    /* Article */
+    .article {
+      background: #fff;
+      border: 1px solid #e0ddd6;
+      border-radius: 14px;
+      padding: 2rem 2.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .article p {
+      font-size: 16px; line-height: 1.95; color: #1a1a1a; margin-bottom: 1.1rem;
+    }
+    .article p:last-child { margin-bottom: 0; }
+    .section-label {
+      font-family: Arial, sans-serif;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: #999;
+      margin: 1.75rem 0 0.4rem;
+      display: block;
+    }
+    .section-label:first-child { margin-top: 0; }
+    .pull-quote {
+      border-left: 3px solid #3a9e6a;
+      padding: 0.65rem 1.1rem;
+      margin: 1.5rem 0;
+      font-size: 15.5px; line-height: 1.85;
+      color: #555;
+      font-style: italic;
+    }
+
+    /* Vocab */
+    .vocab-box {
+      background: #fff;
+      border-radius: 14px;
+      border: 1px solid #e0ddd6;
+      padding: 1.5rem 1.75rem;
+    }
+    .vocab-box h2 {
+      font-family: Arial, sans-serif;
+      font-size: 13px; font-weight: 700; color: #888;
+      margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .hint { font-size: 12px; color: #aaa; font-family: Arial, sans-serif; margin-bottom: 1rem; }
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+      gap: 10px;
+    }
+    .vcard {
+      background: #f9f8f5;
+      border: 1px solid #e8e5de;
+      border-radius: 8px;
+      padding: 10px 13px;
+      cursor: pointer;
+      transition: background 0.12s;
+    }
+    .vcard:hover { background: #f0ede5; }
+    .vcard .en { font-size: 14.5px; font-weight: 600; color: #111; margin-bottom: 2px; }
+    .vcard .zh { font-size: 12.5px; color: #666; font-family: Arial, sans-serif; margin-bottom: 4px; }
+    .vcard .eg {
+      font-size: 12px; color: #888; font-family: Arial, sans-serif;
+      line-height: 1.55; display: none; margin-top: 6px;
+      border-top: 1px solid #e0ddd6; padding-top: 6px;
+    }
+    .vcard.open .eg { display: block; }
+    .vcard.open { background: #eef6f2; border-color: #b8dfc9; }
+
+    /* Footer */
+    .footer {
+      text-align: center; margin-top: 2.5rem;
+      font-size: 12px; color: #bbb; font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <span class="tag">Nature &amp; Wildlife</span>
+    <h1>The Yellow-Throated Marten</h1>
+    <p class="sub">A junior-level English article on ecology — approx. 600 words</p>
+    <div class="meta">
+      <span class="meta-item"><strong>Scientific name</strong> Martes flavigula</span>
+      <span class="meta-item"><strong>Chinese name</strong> 黃喉貂</span>
+      <span class="meta-item"><strong>Level</strong> Junior high school</span>
+    </div>
+  </div>
+
+  <div class="article">
+    <span class="section-label">Introduction</span>
+    <p>Have you ever seen a small, fast animal running through a forest? If you live in Taiwan or other parts of Asia, you might be lucky enough to spot a yellow-throated marten. This beautiful creature is one of the most interesting wild animals in the region. Its bright yellow throat makes it easy to recognize, and its quick movements make it hard to catch.</p>
+
+    <span class="section-label">Appearance</span>
+    <p>The yellow-throated marten is a medium-sized mammal. It has a long, slim body that can grow up to 60 centimeters in length, and its tail adds another 40 centimeters. An adult usually weighs between 1.5 and 3 kilograms. Its fur is a mix of dark brown and black, but the most noticeable feature is its bright yellow or orange throat and chest. This colorful patch gives the animal its name. Its legs are short but very strong, which helps it climb trees and jump from branch to branch with ease.</p>
+
+    <span class="section-label">Habitat</span>
+    <p>Yellow-throated martens live in forests across a wide area of Asia. They can be found in countries such as China, India, Korea, and Taiwan. In Taiwan, they are most often seen in mountain forests at elevations between 1,000 and 3,000 meters. They prefer dense forests with lots of trees and cover, where they can hide and hunt. They are very adaptable animals — they can live in tropical rainforests as well as cooler mountain woodlands.</p>
+
+    <div class="pull-quote">Unlike many wild animals that are shy and avoid people, yellow-throated martens are bold and curious. They are sometimes spotted near hiking trails or forest roads.</div>
+
+    <span class="section-label">Diet &amp; Hunting</span>
+    <p>Yellow-throated martens are omnivores, which means they eat both animals and plants. Their diet includes small mammals like squirrels and mice, birds, eggs, insects, and even fruit and honey. They are known to be brave hunters. In some areas, they have been observed hunting in pairs or small groups, which helps them catch larger prey such as young deer or serow. This is quite unusual behavior for an animal of their size.</p>
+
+    <span class="section-label">Behavior</span>
+    <p>These martens are active during the day, which makes them easier to observe than many other wild mammals that only come out at night. They are excellent climbers and spend a lot of time in trees. They mark their territory using scent glands, leaving a smell that warns other martens to stay away. They live alone or in small family groups, and they do not have a fixed home — instead, they roam a large area searching for food.</p>
+
+    <span class="section-label">Conservation</span>
+    <p>At the moment, yellow-throated martens are not considered an endangered species. However, they face threats from habitat loss caused by deforestation and human development. In Taiwan, they are protected by law, and hunting them is illegal. Researchers and conservationists are working to learn more about their behavior and population so that they can be better protected in the future. You can help too — by supporting nature reserves and being careful not to disturb wildlife when you visit forests.</p>
+
+    <span class="section-label">Conclusion</span>
+    <p>The yellow-throated marten is a remarkable animal — bold, beautiful, and full of energy. Learning about animals like this helps us appreciate the natural world around us. Next time you walk through a forest in Taiwan, look carefully. You might just catch a glimpse of this striking creature darting between the trees.</p>
+  </div>
+
+  <div class="vocab-box">
+    <h2>Key Vocabulary</h2>
+    <p class="hint">點擊單字卡展開例句 — Click a card to see an example sentence</p>
+    <div class="vocab-grid">
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">mammal</p><p class="zh">哺乳類動物</p><p class="eg">A dog is a mammal, just like humans.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">omnivore</p><p class="zh">雜食性動物</p><p class="eg">Bears are omnivores — they eat fish and berries.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">habitat</p><p class="zh">棲息地</p><p class="eg">The forest is the marten's natural habitat.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">adaptable</p><p class="zh">適應力強的</p><p class="eg">Foxes are very adaptable — they can live in cities.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">elevation</p><p class="zh">海拔高度</p><p class="eg">The trail reaches an elevation of 2,500 meters.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">prey</p><p class="zh">獵物</p><p class="eg">The eagle spotted its prey from high above.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">territory</p><p class="zh">領地</p><p class="eg">The wolf marks its territory with scent.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">deforestation</p><p class="zh">森林砍伐</p><p class="eg">Deforestation destroys the homes of many animals.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">endangered</p><p class="zh">瀕臨絕種的</p><p class="eg">The giant panda is an endangered species.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">conservationist</p><p class="zh">自然保育者</p><p class="eg">Conservationists work to protect wild animals.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">roam</p><p class="zh">漫遊、遊蕩</p><p class="eg">Wild horses roam freely across the plains.</p></div>
+      <div class="vcard" onclick="this.classList.toggle('open')"><p class="en">glimpse</p><p class="zh">一瞥、短暫看到</p><p class="eg">I caught a glimpse of the deer before it ran away.</p></div>
+    </div>
+  </div>
+
+  <p class="footer">Generated for English learning purposes &nbsp;·&nbsp; 黃喉貂生態介紹</p>
+</div>
+</body>
+</html>
