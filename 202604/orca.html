@@ -2,121 +2,188 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Apex Predators of the Deep: The Ecological World of Orcas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Killer Whale</title>
 <style>
-    body {
-        font-family: "Microsoft JhengHei", Arial, sans-serif;
-        color: #2c3e50;
-        line-height: 1.6;
-        margin: 40px auto;
-        padding: 0 20px;
-        max-width: 1000px;
-        background-color: #f7f9fa;
-    }
-    h1 {
-        font-size: 24pt;
-        color: #1a365d;
-        text-align: center;
-        margin-bottom: 25px;
-        padding-bottom: 10px;
-        border-bottom: 2px solid #3182ce;
-    }
-    h2 {
-        font-size: 16pt;
-        color: #2b6cb0;
-        margin-top: 35px;
-        margin-bottom: 15px;
-        border-left: 5px solid #3182ce;
-        padding-left: 10px;
-    }
-    h3 {
-        font-size: 12pt;
-        color: #2d3748;
-        margin-top: 20px;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-    p {
-        margin: 0 0 12px 0;
-        text-align: justify;
-    }
-    ul {
-        margin: 0 0 20px 0;
-        padding-left: 20px;
-    }
-    li {
-        margin-bottom: 8px;
-    }
-    .destination-block {
-        background-color: #ffffff;
-        padding: 25px;
-        border-radius: 6px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        margin-bottom: 30px;
-        border: 1px solid #e2e8f0;
-    }
-    .highlight {
-        font-weight: bold;
-        color: #1a365d;
-    }
+  :root{
+    --ink:#12202b;
+    --sub:#4b5f6b;
+    --bg:#f6f9fa;
+    --card:#ffffff;
+    --accent:#1c7ea8;
+    --accent-dark:#0f4c66;
+    --line:#dde6e9;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Segoe UI","Helvetica Neue",Arial,"Noto Sans TC",sans-serif;
+    line-height:1.7;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:40px 24px 80px;
+  }
+  .eyebrow{
+    color:var(--accent-dark);
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    font-size:13px;
+    margin-bottom:10px;
+  }
+  h1{
+    font-size:2.4em;
+    margin:0 0 8px;
+    color:var(--ink);
+  }
+  .subtitle{
+    color:var(--sub);
+    font-size:1.02em;
+    margin-bottom:20px;
+  }
+  .infobox{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:5px solid var(--accent);
+    border-radius:8px;
+    padding:14px 18px;
+    font-size:.95em;
+    margin-bottom:32px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 26px;
+  }
+  .infobox b{color:var(--accent-dark);}
+  h2{
+    color:var(--accent-dark);
+    font-size:1.35em;
+    margin:38px 0 12px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--line);
+  }
+  p{margin:0 0 16px;}
+  .vocab-section h2{margin-top:48px;}
+  .vocab-hint{
+    color:var(--sub);
+    font-size:.92em;
+    margin-bottom:18px;
+  }
+  .vocab-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:14px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:14px 16px;
+    cursor:pointer;
+    transition:box-shadow .2s ease, transform .2s ease;
+    user-select:none;
+  }
+  .card:hover{
+    box-shadow:0 4px 14px rgba(28,126,168,.12);
+    transform:translateY(-2px);
+  }
+  .card .en{
+    font-weight:700;
+    color:var(--accent-dark);
+    font-size:1.05em;
+  }
+  .card .zh{
+    color:var(--sub);
+    font-size:.92em;
+    margin-top:2px;
+  }
+  .card .ex{
+    display:none;
+    margin-top:10px;
+    padding-top:10px;
+    border-top:1px dashed var(--line);
+    font-size:.9em;
+    font-style:italic;
+    color:var(--ink);
+  }
+  .card.open .ex{display:block;}
+  footer{
+    margin-top:56px;
+    text-align:center;
+    color:var(--sub);
+    font-size:.85em;
+    border-top:1px solid var(--line);
+    padding-top:20px;
+  }
 </style>
 </head>
 <body>
+<div class="wrap">
 
-    <h1>Apex Predators of the Deep: The Ecological World of Orcas</h1>
-    <p>Gliding through cold oceans with striking black-and-white countershading, the Orca (<i>Orcinus orca</i>)—commonly referred to as the Killer Whale—stands as the undisputed apex predator of the global marine ecosystem. Far beyond their historical reputation as formidable hunters, orcas possess remarkable intelligence, highly intricate matriarchal social structures, and distinct cultural traditions. This article explores their taxonomy, physiological adaptation, hunting ecology, and the conservation challenges facing wild populations today.</p>
+  <div class="eyebrow">Nature &amp; Wildlife</div>
+  <h1>The Killer Whale</h1>
+  <div class="subtitle">A junior-level English article on ecology — approx. 600 words</div>
 
-    <!-- Section 1: Taxonomy & Social Structure -->
-    <div class="destination-block">
-        <h2>1. Taxonomic Identity, Ecotypes, and Matriarchal Culture</h2>
-        
-        <h3>📅 Evolutionary Classification (Giants of the Dolphin Family)</h3>
-        <p>Despite their common name, orcas are not true whales; biologically, they are the largest extant members of the oceanic dolphin family (Delphinidae). Adult males can reach lengths up to 8 meters and weigh over 6 metric tons, featuring an upright, triangular dorsal fin up to 1.8 meters tall. Females are slightly smaller with curved dorsal fins. Their iconic coloration serves as functional camouflage: the dark dorsal side blends with the deep ocean floor when viewed from above, while the white ventral patch mimics bright surface light when viewed from below.</p>
-        
-        <h3>🤿 Matriarchal Lineage and Vocal Dialects</h3>
-        <ul>
-            <li><span class="highlight">Matriarchal Structure:</span> Orca societies are organized into tight-knit pods led by the oldest female (the matriarch). Offspring rarely leave their maternal family permanently. Senior matriarchs play a critical role in pod survival, carrying decades of ecological memory regarding navigation corridors and seasonal prey availability.</li>
-            <li><span class="highlight">Acoustic Dialects:</span> Each pod utilizes a unique repertoire of underwater clicks, whistles, and pulsed calls. These distinct vocal traditions are culturally transmitted across generations, representing a level of social complexity rarely observed in non-human mammals.</li>
-        </ul>
-        
-        <h3>🏨 Sympatric Ecotypes</h3>
-        <p>Across the world's oceans, orcas are divided into distinct "ecotypes" that differ in genetics, morphology, diet, and behavior. In the North Pacific, for instance, Resident, Transient (Bigg's), and Offshore ecotypes inhabit overlapping geographic ranges yet remain reproductive and social isolation, maintaining strictly separated diets and hunting strategies.</p>
+  <div class="infobox">
+    <span><b>Scientific name</b> Orcinus orca</span>
+    <span><b>Chinese name</b> 殺人鯨（虎鯨）</span>
+    <span><b>Level</b> Junior high school</span>
+  </div>
+
+  <h2>Introduction</h2>
+  <p>Have you ever seen a big black-and-white animal jumping out of the ocean? That animal is probably a killer whale. Killer whales are one of the smartest and most powerful animals in the sea. Even though their name sounds scary, they are actually a type of dolphin, not a whale. People all over the world love to watch them because they are beautiful, strong, and very clever.</p>
+
+  <h2>Appearance</h2>
+  <p>The killer whale is easy to recognize because of its black and white body. Its back is black, its belly is white, and it has a white patch above each eye. Killer whales are very large animals. An adult male can grow up to 9 meters long and weigh as much as 6,000 kilograms, which is heavier than a school bus. Males also have a very tall fin on their back, called a dorsal fin, that can be almost 2 meters high. This tall fin makes it easy to tell a male killer whale from a female.</p>
+
+  <h2>Habitat</h2>
+  <p>Killer whales live in oceans all around the world. You can find them in cold waters near the North and South Poles, as well as in warmer seas closer to the equator. They are one of the most widespread animals on Earth. Killer whales usually swim in deep, open water, but they sometimes come close to the coast to hunt for food. They can swim very fast, reaching speeds of up to 55 kilometers per hour, which makes them one of the fastest animals in the ocean.</p>
+
+  <h2>Diet &amp; Hunting</h2>
+  <p>Killer whales are carnivores, which means they only eat meat. Their food includes fish, squid, seals, sea lions, and sometimes even other whales. Because they eat so many different kinds of animals, scientists call them the top predator of the ocean, meaning nothing hunts them. Killer whales are famous for their smart hunting methods. They often hunt in groups called pods, working together like a team. In some places, a pod will make big waves to knock a seal off a piece of ice. This kind of teamwork shows just how intelligent these animals really are.</p>
+
+  <h2>Behavior</h2>
+  <p>Killer whales are very social animals. They live in family groups called pods, and each pod can have anywhere from a few whales to more than twenty. Young killer whales often stay with their mothers for their whole lives. Pods talk to each other using clicks, whistles, and calls, and each pod even has its own special "language" that is different from other pods. Killer whales are also known for their playful behavior. They often jump out of the water, an action called breaching, and slap their tails on the surface just for fun.</p>
+
+  <h2>Conservation</h2>
+  <p>Killer whales are not officially listed as endangered around the world, but some smaller groups are struggling. Pollution, noise from ships, and a shortage of fish because of overfishing all make life harder for them. In some areas, chemicals in the ocean have built up in their bodies over many years, which can harm their health. Many countries now have laws to protect killer whales and their ocean homes. Scientists continue to study these animals so that people can better understand and protect them in the future.</p>
+
+  <h2>Conclusion</h2>
+  <p>The killer whale is a powerful, intelligent, and social animal that lives in every ocean on our planet. Learning about killer whales helps us understand how amazing life in the ocean can be. The next time you see a photo or video of a killer whale jumping through the waves, remember just how smart and special this creature really is.</p>
+
+  <div class="vocab-section">
+    <h2>Key Vocabulary</h2>
+    <div class="vocab-hint">點擊單字卡展開例句 — Click a card to see an example sentence</div>
+    <div class="vocab-grid" id="vocabGrid">
+      <div class="card"><div class="en">dolphin</div><div class="zh">海豚</div><div class="ex">A killer whale is actually a kind of dolphin.</div></div>
+      <div class="card"><div class="en">dorsal fin</div><div class="zh">背鰭</div><div class="ex">The shark's dorsal fin rose above the water.</div></div>
+      <div class="card"><div class="en">widespread</div><div class="zh">分布廣泛的</div><div class="ex">This plant is widespread across many countries.</div></div>
+      <div class="card"><div class="en">carnivore</div><div class="zh">肉食性動物</div><div class="ex">Lions are carnivores that hunt other animals.</div></div>
+      <div class="card"><div class="en">predator</div><div class="zh">掠食者</div><div class="ex">The eagle is a skilled predator in the sky.</div></div>
+      <div class="card"><div class="en">pod</div><div class="zh">（鯨豚的）群體</div><div class="ex">A pod of dolphins swam past the boat.</div></div>
+      <div class="card"><div class="en">breach</div><div class="zh">（鯨豚）躍出水面</div><div class="ex">The whale breached the surface with a huge splash.</div></div>
+      <div class="card"><div class="en">overfishing</div><div class="zh">過度捕撈</div><div class="ex">Overfishing has reduced the number of fish in the sea.</div></div>
+      <div class="card"><div class="en">pollution</div><div class="zh">污染</div><div class="ex">Ocean pollution is harmful to marine animals.</div></div>
+      <div class="card"><div class="en">endangered</div><div class="zh">瀕臨絕種的</div><div class="ex">The giant panda is an endangered species.</div></div>
+      <div class="card"><div class="en">intelligent</div><div class="zh">聰明的</div><div class="ex">Dolphins are known to be very intelligent animals.</div></div>
+      <div class="card"><div class="en">social</div><div class="zh">群居的、社交的</div><div class="ex">Wolves are social animals that live in packs.</div></div>
     </div>
+  </div>
 
-    <!-- Section 2: Hunting Ecology & Tactics -->
-    <div class="destination-block">
-        <h2>2. Hunting Ecology: Cooperation and Behavioral Plasticity</h2>
-        
-        <h3>📅 Trophic Status and Behavioral Adaptations</h3>
-        <p>Occupying the highest trophic level in marine food webs, orcas have no natural predators. Their success as super-predators stems not merely from physical strength, but from exceptional behavioral plasticity and highly coordinated group tactics tailored to specific prey types.</p>
-        
-        <h3>🤿 Specialised Foraging Tactics</h3>
-        <ul>
-            <li><span class="highlight">Intentional Beaching (Self-Stranding):</span> Along the coast of Patagonia, specific pods have perfected a high-risk technique of rushing onto shallow gravel beaches to capture sea lion pups, using the momentum of incoming waves to slide back into deeper water.</li>
-            <li><span class="highlight">Wave-Washing Behavior:</span> In Antarctic ice packs, groups of orcas swim synchronously in formation toward floating ice floes. This coordinated movement generates surface waves powerful enough to wash seals off the ice and directly into the water.</li>
-            <li><span class="highlight">Carousel Feeding (Tail-Slapping):</span> In Northern Europe, pods herd large schools of herring into dense, spherical "bait balls." Once the fish are concentrated, orcas deliver powerful slaps with their tail flukes, stunning hundreds of fish instantly for easy consumption.</li>
-        </ul>
-        
-        <h3>🏨 Trophic Cascades and Marine Top Predators</h3>
-        <p>The predatory impact of orcas extends to other large marine carnivores. Off the coast of South Africa, specialized orca pairs have been documented targeting Great White Sharks, systematically extracting their nutrient-rich livers and causing temporary displacement of local shark populations.</p>
-    </div>
+  <footer>Generated for English learning purposes · 殺人鯨生態介紹</footer>
 
-    <!-- Section 3: Anthropogenic Threats & Conservation -->
-    <div class="destination-block">
-        <h2>3. Environmental Pressures and Conservation Status</h2>
-        
-        <h3>📅 Bioaccumulation and Chemical Pollution</h3>
-        <p>As long-lived apex predators, orcas are exceptionally vulnerable to bioaccumulation. Synthetic chemical pollutants—particularly Polychlorinated Biphenyls (PCBs) and industrial heavy metals—accumulate in their thick blubber layer. During periods of food scarcity, these toxins are metabolized into the bloodstream, severely compromising immune function and reproductive success.</p>
-        
-        <h3>🤿 Prey Depletion and Vessel Interferences</h3>
-        <ul>
-            <li><span class="highlight">Declining Prey Biomass:</span> Specialized populations, such as the Southern Resident orcas of the Pacific Northwest, face severe decline due to the collapse of local Chinook salmon stocks caused by habitat degradation and overfishing.</li>
-            <li><span class="highlight">Acoustic Disturbance:</span> Commercial shipping, industrial marine noise, and heavy vessel traffic generate underwater acoustic interference. This hampers the orcas' echolocation capabilities, hindering their ability to hunt and navigate efficiently.</li>
-        </ul>
-        
-        <h3>🏨 Global Conservation Mandates</h3>
-        <p>Protecting wild orca populations requires comprehensive, ecosystem-scale management. Current conservation strategies focus on establishing marine protected areas, regulating toxic discharge, restoring natural fish stocks, and enforcing strict speed and distance regulations for marine traffic to mitigate acoustic pollution.</p>
-    </div>
+</div>
+
+<script>
+  document.querySelectorAll('.card').forEach(function(card){
+    card.addEventListener('click', function(){
+      card.classList.toggle('open');
+    });
+  });
+</script>
 
 </body>
 </html>
