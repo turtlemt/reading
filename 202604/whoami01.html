@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who Am I? A Sleepy Forest Mystery</title>
+<style>
+  :root{
+    --ink:#1f2a1c;
+    --sub:#5a6b52;
+    --bg:#f6f8f4;
+    --card:#ffffff;
+    --accent:#5e8c4e;
+    --accent-dark:#3c5c31;
+    --line:#dde6d6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Segoe UI","Helvetica Neue",Arial,"Noto Sans TC",sans-serif;
+    line-height:1.7;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:40px 24px 80px;
+  }
+  .eyebrow{
+    color:var(--accent-dark);
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    font-size:13px;
+    margin-bottom:10px;
+  }
+  h1{
+    font-size:2.2em;
+    margin:0 0 8px;
+    color:var(--ink);
+  }
+  .subtitle{
+    color:var(--sub);
+    font-size:1.02em;
+    margin-bottom:20px;
+  }
+  .infobox{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:5px solid var(--accent);
+    border-radius:8px;
+    padding:14px 18px;
+    font-size:.95em;
+    margin-bottom:32px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 26px;
+  }
+  .infobox b{color:var(--accent-dark);}
+  .infobox .mystery{color:var(--sub); font-style:italic;}
+  h2{
+    color:var(--accent-dark);
+    font-size:1.35em;
+    margin:38px 0 12px;
+    padding-bottom:6px;
+    border-bottom:2px solid var(--line);
+  }
+  p{margin:0 0 16px;}
+  .reveal{
+    background:#eef5ea;
+    border:1px dashed var(--accent);
+    border-radius:8px;
+    padding:14px 18px;
+    margin:18px 0 0;
+  }
+  .vocab-section h2{margin-top:48px;}
+  .vocab-hint{
+    color:var(--sub);
+    font-size:.92em;
+    margin-bottom:18px;
+  }
+  .vocab-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:14px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:14px 16px;
+    cursor:pointer;
+    transition:box-shadow .2s ease, transform .2s ease;
+    user-select:none;
+  }
+  .card:hover{
+    box-shadow:0 4px 14px rgba(94,140,78,.14);
+    transform:translateY(-2px);
+  }
+  .card .en{
+    font-weight:700;
+    color:var(--accent-dark);
+    font-size:1.05em;
+  }
+  .card .zh{
+    color:var(--sub);
+    font-size:.92em;
+    margin-top:2px;
+  }
+  .card .ex{
+    display:none;
+    margin-top:10px;
+    padding-top:10px;
+    border-top:1px dashed var(--line);
+    font-size:.9em;
+    font-style:italic;
+    color:var(--ink);
+  }
+  .card.open .ex{display:block;}
+  footer{
+    margin-top:56px;
+    text-align:center;
+    color:var(--sub);
+    font-size:.85em;
+    border-top:1px solid var(--line);
+    padding-top:20px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">Nature &amp; Wildlife · Guess the Animal</div>
+  <h1>Who Am I? A Sleepy Forest Mystery</h1>
+  <div class="subtitle">A junior-level English article on ecology — approx. 600 words</div>
+
+  <div class="infobox">
+    <span><b>Scientific name</b> <span class="mystery">? ? ?</span></span>
+    <span><b>Chinese name</b> <span class="mystery">? ? ?</span></span>
+    <span><b>Level</b> Junior high school</span>
+  </div>
+
+  <h2>Introduction</h2>
+  <p>High up in the tall trees of Australia lives an animal that almost everyone recognizes from pictures, but can you guess it just from a description? This animal spends most of its life sitting quietly among the branches, moving slowly and calmly. It rarely comes down to the ground, and when it does, it moves in a slow, careful way. Let's look closely at its body, home, food, and daily life — and see if you can guess what it is before we reach the end.</p>
+
+  <h2>Appearance</h2>
+  <p>This animal has soft, thick grey fur that helps protect it from both hot sun and cool nights. It has a round face, a large black nose, and two big, fluffy ears that stick out on each side of its head. Its body is small and round, usually between 60 and 85 centimeters long, and it weighs between 4 and 15 kilograms depending on where it lives. It has almost no tail. Its paws have sharp claws and rough pads, which give it a strong grip for holding on to branches all day long.</p>
+
+  <h2>Habitat</h2>
+  <p>This animal lives only in Australia, mostly along the eastern and southern coast. It makes its home in forests filled with one special kind of tree. It spends nearly its entire life in the branches of these trees, climbing from one to another and rarely traveling far on the ground. Because it depends so heavily on this one type of tree, it cannot easily move to a new area if its forest is destroyed.</p>
+
+  <h2>Diet &amp; Behavior</h2>
+  <p>This animal is a fussy eater. It eats almost nothing but the leaves of one type of tree, called eucalyptus. These leaves are tough, low in nutrients, and even a little poisonous to most other animals, but this animal's body has adapted to handle them safely. It gets nearly all the water it needs from the leaves themselves, so it rarely needs to drink. Because eucalyptus leaves give very little energy, this animal must rest a lot to save strength — in fact, it sleeps for about 18 to 20 hours every day, making it one of the sleepiest animals in the world.</p>
+
+  <h2>Family Life</h2>
+  <p>This animal is a marsupial, which means the mother carries her baby in a pouch on her belly after it is born. The baby, called a joey, stays safely inside the pouch for about six months before it is ready to look around outside. This animal usually lives alone rather than in groups, and each one has its own small area of trees that it prefers to stay in. Even though it looks calm and quiet, it can make surprisingly loud, deep bellowing sounds, especially the males during mating season.</p>
+
+  <h2>Conservation</h2>
+  <p>This animal faces serious challenges today. Bushfires, forest clearing for farms and cities, and diseases have all reduced its population in recent years. Because it depends on just one kind of tree, losing its forest home is especially dangerous for its survival. In parts of Australia, this animal is now listed as vulnerable or endangered, and conservation groups are working to protect its forests and help sick or injured animals recover.</p>
+
+  <h2>Conclusion</h2>
+  <p>So, have you guessed the answer yet? This slow-moving, tree-loving, extremely sleepy animal that eats only eucalyptus leaves and carries its baby in a pouch is the koala!</p>
+  <div class="reveal">
+    <b>Scientific name:</b> Phascolarctos cinereus &nbsp;·&nbsp; <b>Chinese name:</b> 無尾熊（樹袋熊）
+  </div>
+  <p style="margin-top:16px;">Koalas are one of Australia's most beloved animals. Learning about how they live — and how much they depend on their eucalyptus forests — helps us understand why protecting their habitat is so important for their future.</p>
+
+  <div class="vocab-section">
+    <h2>Key Vocabulary</h2>
+    <div class="vocab-hint">點擊單字卡展開例句 — Click a card to see an example sentence</div>
+    <div class="vocab-grid" id="vocabGrid">
+      <div class="card"><div class="en">marsupial</div><div class="zh">有袋類動物</div><div class="ex">A kangaroo is a well-known marsupial from Australia.</div></div>
+      <div class="card"><div class="en">pouch</div><div class="zh">（有袋動物的）育兒袋</div><div class="ex">The baby kangaroo stayed in its mother's pouch.</div></div>
+      <div class="card"><div class="en">joey</div><div class="zh">（袋鼠、無尾熊等的）幼兒</div><div class="ex">The joey peeked out of the pouch for the first time.</div></div>
+      <div class="card"><div class="en">eucalyptus</div><div class="zh">尤加利樹</div><div class="ex">Eucalyptus leaves are tough and hard for most animals to digest.</div></div>
+      <div class="card"><div class="en">adapt</div><div class="zh">適應</div><div class="ex">This animal has adapted to eat food that is poisonous to others.</div></div>
+      <div class="card"><div class="en">nutrient</div><div class="zh">營養素</div><div class="ex">These leaves are low in nutrients, so the animal must rest a lot.</div></div>
+      <div class="card"><div class="en">bellow</div><div class="zh">吼叫、發出低沉巨響</div><div class="ex">The male animal let out a loud bellow at night.</div></div>
+      <div class="card"><div class="en">bushfire</div><div class="zh">（澳洲）叢林大火</div><div class="ex">The bushfire destroyed hundreds of trees in the forest.</div></div>
+      <div class="card"><div class="en">vulnerable</div><div class="zh">易受傷害的、瀕危前期的</div><div class="ex">This species is now considered vulnerable in the wild.</div></div>
+      <div class="card"><div class="en">habitat</div><div class="zh">棲息地</div><div class="ex">Cutting down forests destroys the animal's natural habitat.</div></div>
+      <div class="card"><div class="en">conservation</div><div class="zh">保育、保護</div><div class="ex">Conservation groups work hard to protect wild animals.</div></div>
+      <div class="card"><div class="en">solitary</div><div class="zh">獨居的</div><div class="ex">This animal is solitary and prefers to live alone.</div></div>
+    </div>
+  </div>
+
+  <footer>Generated for English learning purposes · 無尾熊生態介紹（謎題版）</footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.card').forEach(function(card){
+    card.addEventListener('click', function(){
+      card.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
