@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taiwan’s National Health Insurance</title>
+<style>
+  :root {
+    --bg: #f1f7f8;
+    --surface: #ffffff;
+    --ink: #10262e;
+    --muted: #4d6670;
+    --deep: #0a3442;
+    --teal: #136f7c;
+    --coral: #c9472d;
+    --line: #cfe1e5;
+    --header-text: #f1f7f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0a1d24;
+      --surface: #11303a;
+      --ink: #e3f0f2;
+      --muted: #9bb7bf;
+      --deep: #06151b;
+      --teal: #6ec3cf;
+      --coral: #ff8a70;
+      --line: #23505c;
+      --header-text: #e3f0f2;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 1rem; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Noto Serif TC", "PMingLiU", serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+  header {
+    background: var(--deep);
+    color: var(--header-text);
+    padding: 3.5rem 1.25rem 3rem;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; }
+  .category {
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: 0.95rem;
+    color: #8fd3dd;
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.15;
+    margin: 0 0 0.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .subtitle { margin: 0 0 1.5rem; color: #b9dde3; font-size: 1.05rem; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem;
+    margin: 0; padding: 1rem 0 0;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: 0.95rem;
+  }
+  .meta dt { display: inline; color: #8fd3dd; margin-right: 0.4rem; }
+  .meta dd { display: inline; margin: 0; }
+  main { padding: 2.5rem 1.25rem 1rem; }
+  article h2, .vocab h2 {
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    color: var(--teal);
+    margin: 2.5rem 0 0.5rem;
+    padding-left: 0.75rem;
+    border-left: 4px solid var(--coral);
+  }
+  article h2:first-child { margin-top: 0; }
+  article p { margin: 0 0 1rem; max-width: 40rem; }
+  .vocab { margin-top: 3.5rem; }
+  .vocab h2 { margin-top: 0; }
+  .hint { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem;
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    gap: 0.75rem;
+    align-items: start;
+    padding: 0; margin: 0; list-style: none;
+  }
+  .card {
+    width: 100%;
+    text-align: left;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    font: inherit;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  .card:hover { border-color: var(--teal); }
+  .card:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
+  .card .en { display: block; font-family: "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 1.1rem; }
+  .card .zh { display: block; color: var(--muted); font-size: 0.95rem; margin-top: 0.15rem; }
+  .card .ex {
+    display: none;
+    margin-top: 0.6rem; padding-top: 0.6rem;
+    border-top: 1px dashed var(--line);
+    font-size: 0.95rem; font-style: italic;
+  }
+  .card[aria-expanded="true"] { border-color: var(--teal); }
+  .card[aria-expanded="true"] .ex { display: block; }
+  footer {
+    max-width: 44rem; margin: 3rem auto 0; padding: 1.25rem 1.25rem 2.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 0.9rem; text-align: center;
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="category">Society &amp; Health</p>
+    <h1>Taiwan’s National Health Insurance</h1>
+    <p class="subtitle">A junior-level English article on public health — approx. 440 words</p>
+    <dl class="meta">
+      <div><dt>Topic</dt><dd>Healthcare system</dd></div>
+      <div><dt>Chinese name</dt><dd lang="zh-Hant">全民健康保險</dd></div>
+      <div><dt>Level</dt><dd>Junior high school</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article>
+      <h2>Introduction</h2>
+      <p>Imagine you wake up with a high fever. In many countries, you might worry about how much a doctor’s visit will cost. In Taiwan, you can walk into a nearby clinic, show your health insurance card, and see a doctor on the same day for a small fee. This convenience comes from the National Health Insurance, or NHI, which many experts see as a model for the world.</p>
+
+      <h2>What Is the NHI?</h2>
+      <p>Taiwan started the NHI on March 1, 1995. Before that, only some groups of people, such as workers and government employees, had insurance. Today, the NHI is a single-payer system. This means one government agency, the National Health Insurance Administration, collects the money and pays hospitals and clinics. About 99 percent of the people in Taiwan are covered, including many foreign residents.</p>
+
+      <h2>How It Works</h2>
+      <p>Everyone pays a monthly premium based on their income. The cost is shared by households, employers, and the government. When patients see a doctor, they pay only a small co-payment. They can choose any hospital or clinic in the system, and they do not need a referral from another doctor.</p>
+      <p>The NHI gives broad coverage. It pays for check-ups, surgery, prescriptions, dental care, and traditional Chinese medicine. It even pays for very expensive treatment for cancer and rare diseases. In this way, everyone has access to good care at an affordable price.</p>
+
+      <h2>A World-Class System</h2>
+      <p>In 2026, the website Numbeo ranked Taiwan first in the world in its Health Care Index, with a score of about 87 out of 100. Taiwan has been at or near the top for several years. The index is based on surveys about people’s own experiences, such as quality, waiting time, cost, and convenience. It is not a medical test of hospitals, but it shows that people in Taiwan are satisfied with their care.</p>
+      <p>The system is also efficient. Taiwan spends only about US$2,400 per person each year on healthcare, while the United States spends about US$13,500. Even so, Taiwan receives a much higher score.</p>
+
+      <h2>Challenges Ahead</h2>
+      <p>No system is perfect. As Taiwan’s population grows older and new treatments become more expensive, the yearly budget keeps rising. It is now more than one trillion New Taiwan dollars. In the past, spending has often grown faster than income, so the government must manage the money carefully. Using medical services wisely is also everyone’s responsibility.</p>
+
+      <h2>Conclusion</h2>
+      <p>Taiwan’s NHI shows that it is possible to give almost everyone access to good medical care at a reasonable cost. Other countries can learn from this experience. At the same time, it reminds us that a good system needs constant care and smart planning.</p>
+    </article>
+
+    <section class="vocab" aria-labelledby="vocab-title">
+      <h2 id="vocab-title">Key Vocabulary</h2>
+      <p class="hint">點擊單字卡展開例句 — Click a card to see an example sentence</p>
+      <ul class="cards">
+        <li><button class="card" aria-expanded="false"><span class="en">insurance</span><span class="zh" lang="zh-Hant">保險</span><span class="ex">She bought travel insurance before the trip.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">premium</span><span class="zh" lang="zh-Hant">保費</span><span class="ex">The monthly premium depends on how much you earn.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">coverage</span><span class="zh" lang="zh-Hant">保障範圍</span><span class="ex">The plan has broad coverage for hospital care.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">single-payer</span><span class="zh" lang="zh-Hant">單一支付者（制度）</span><span class="ex">In a single-payer system, one agency pays the medical bills.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">co-payment</span><span class="zh" lang="zh-Hant">部分負擔（自付額）</span><span class="ex">I paid a small co-payment at the clinic.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">referral</span><span class="zh" lang="zh-Hant">轉診</span><span class="ex">Some countries require a referral to see a specialist.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">access</span><span class="zh" lang="zh-Hant">取得（服務）的機會</span><span class="ex">Every child should have access to education.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">affordable</span><span class="zh" lang="zh-Hant">負擔得起的</span><span class="ex">Fresh fruit is affordable in the night market.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">efficient</span><span class="zh" lang="zh-Hant">有效率的</span><span class="ex">The new system is quick and efficient.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">treatment</span><span class="zh" lang="zh-Hant">治療</span><span class="ex">The doctor suggested a new treatment for the infection.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">rare disease</span><span class="zh" lang="zh-Hant">罕見疾病</span><span class="ex">A rare disease affects only a small number of people.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">budget</span><span class="zh" lang="zh-Hant">預算</span><span class="ex">The school has a small budget for new books.</span></button></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer>Generated for English learning purposes &nbsp;·&nbsp; <span lang="zh-Hant">台灣健保制度介紹</span></footer>
+
+<script>
+  document.querySelectorAll('.card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var open = card.getAttribute('aria-expanded') === 'true';
+      card.setAttribute('aria-expanded', open ? 'false' : 'true');
+    });
+  });
+</script>
+</body>
+</html>
