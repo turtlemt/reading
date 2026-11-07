@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Planting Trees Matters</title>
+<style>
+  :root {
+    --bg: #f1f7f8;
+    --surface: #ffffff;
+    --ink: #10262e;
+    --muted: #4d6670;
+    --deep: #0a3442;
+    --teal: #136f7c;
+    --coral: #c9472d;
+    --line: #cfe1e5;
+    --header-text: #f1f7f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0a1d24;
+      --surface: #11303a;
+      --ink: #e3f0f2;
+      --muted: #9bb7bf;
+      --deep: #06151b;
+      --teal: #6ec3cf;
+      --coral: #ff8a70;
+      --line: #23505c;
+      --header-text: #e3f0f2;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 1rem; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Noto Serif TC", "PMingLiU", serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+  header {
+    background: var(--deep);
+    color: var(--header-text);
+    padding: 3.5rem 1.25rem 3rem;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; }
+  .category {
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: 0.95rem;
+    color: #8fd3dd;
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.15;
+    margin: 0 0 0.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .subtitle { margin: 0 0 1.5rem; color: #b9dde3; font-size: 1.05rem; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem;
+    margin: 0; padding: 1rem 0 0;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: 0.95rem;
+  }
+  .meta dt { display: inline; color: #8fd3dd; margin-right: 0.4rem; }
+  .meta dd { display: inline; margin: 0; }
+  main { padding: 2.5rem 1.25rem 1rem; }
+  article h2, .vocab h2 {
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    color: var(--teal);
+    margin: 2.5rem 0 0.5rem;
+    padding-left: 0.75rem;
+    border-left: 4px solid var(--coral);
+  }
+  article h2:first-child { margin-top: 0; }
+  article p { margin: 0 0 1rem; max-width: 40rem; }
+  .vocab { margin-top: 3.5rem; }
+  .vocab h2 { margin-top: 0; }
+  .hint { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem;
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    gap: 0.75rem;
+    align-items: start;
+    padding: 0; margin: 0; list-style: none;
+  }
+  .card {
+    width: 100%;
+    text-align: left;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    font: inherit;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  .card:hover { border-color: var(--teal); }
+  .card:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
+  .card .en { display: block; font-family: "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 1.1rem; }
+  .card .zh { display: block; color: var(--muted); font-size: 0.95rem; margin-top: 0.15rem; }
+  .card .ex {
+    display: none;
+    margin-top: 0.6rem; padding-top: 0.6rem;
+    border-top: 1px dashed var(--line);
+    font-size: 0.95rem; font-style: italic;
+  }
+  .card[aria-expanded="true"] { border-color: var(--teal); }
+  .card[aria-expanded="true"] .ex { display: block; }
+  footer {
+    max-width: 44rem; margin: 3rem auto 0; padding: 1.25rem 1.25rem 2.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 0.9rem; text-align: center;
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="category">Environment &amp; Science</p>
+    <h1>Why Planting Trees Matters</h1>
+    <p class="subtitle">A junior-level English article on environmental science — approx. 400 words</p>
+    <dl class="meta">
+      <div><dt>Topic</dt><dd>Trees and climate</dd></div>
+      <div><dt>Chinese name</dt><dd lang="zh-Hant">植樹與碳固定</dd></div>
+      <div><dt>Level</dt><dd>Junior high school</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article>
+      <h2>Introduction</h2>
+      <p>Every day, people burn coal, oil, and gas to run cars, factories, and power plants. This puts a lot of carbon dioxide into the air. Carbon dioxide is a greenhouse gas, which means it traps heat around the Earth and leads to global warming. Fortunately, nature has a helper that works quietly all day long: trees. Planting trees is one of the simplest ways to protect our planet.</p>
+
+      <h2>How Trees Make Food</h2>
+      <p>A tree is like a small factory powered by sunlight. This process is called photosynthesis. The leaves contain chlorophyll, a green substance that captures light energy. The tree absorbs carbon dioxide from the air through tiny holes in its leaves, and it takes in water through its roots. Using the energy from sunlight, the tree changes them into glucose and oxygen. Glucose is a sugar that feeds the tree, and the oxygen is released into the air for us to breathe.</p>
+
+      <h2>Locking Away Carbon</h2>
+      <p>The glucose does not disappear. The tree uses it to build new leaves, branches, roots, and wood. In this way, carbon from the air becomes part of the tree’s body. Scientists call this carbon fixation. A large tree can absorb about 20 kilograms of carbon dioxide in a year, and it can keep that carbon locked inside for decades or even centuries. A healthy forest is like a giant carbon bank.</p>
+
+      <h2>More Benefits of Trees</h2>
+      <p>Trees do much more than clean the air. Their shade can make a hot city street feel noticeably cooler. Their roots hold the soil together, which reduces erosion and helps prevent landslides during heavy rain. Forests are also the habitat of countless birds, insects, and mammals. Even a small park can make people feel calmer and happier.</p>
+
+      <h2>Plant the Right Tree</h2>
+      <p>Planting trees helps the most when we do it carefully. Native species usually grow best because they fit the local climate and support local wildlife. Young trees absorb only a small amount of carbon at first, so we must also protect old forests and take care of new trees for many years. Planting a tree and then forgetting it is not enough.</p>
+
+      <h2>Conclusion</h2>
+      <p>A tree is an air cleaner, a cooling system, and a home for wildlife, all powered by the sun. Trees alone cannot solve climate change, but every tree helps. Perhaps your school or community will hold a tree-planting day soon. It could be your chance to make a real difference.</p>
+    </article>
+
+    <section class="vocab" aria-labelledby="vocab-title">
+      <h2 id="vocab-title">Key Vocabulary</h2>
+      <p class="hint">點擊單字卡展開例句 — Click a card to see an example sentence</p>
+      <ul class="cards">
+        <li><button class="card" aria-expanded="false"><span class="en">photosynthesis</span><span class="zh" lang="zh-Hant">光合作用</span><span class="ex">Photosynthesis happens in the green leaves of a plant.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">chlorophyll</span><span class="zh" lang="zh-Hant">葉綠素</span><span class="ex">Chlorophyll gives leaves their green color.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">absorb</span><span class="zh" lang="zh-Hant">吸收</span><span class="ex">A sponge can absorb a lot of water.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">release</span><span class="zh" lang="zh-Hant">釋放</span><span class="ex">Plants release oxygen into the air.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">glucose</span><span class="zh" lang="zh-Hant">葡萄糖</span><span class="ex">Glucose gives the body quick energy.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">greenhouse gas</span><span class="zh" lang="zh-Hant">溫室氣體</span><span class="ex">Carbon dioxide is a greenhouse gas.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">global warming</span><span class="zh" lang="zh-Hant">全球暖化</span><span class="ex">Global warming is melting the ice at the poles.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">carbon fixation</span><span class="zh" lang="zh-Hant">碳固定</span><span class="ex">Carbon fixation turns carbon dioxide into sugar.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">erosion</span><span class="zh" lang="zh-Hant">土壤侵蝕</span><span class="ex">Tree roots help stop erosion on steep hills.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">habitat</span><span class="zh" lang="zh-Hant">棲息地</span><span class="ex">A forest is a habitat for many animals.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">native</span><span class="zh" lang="zh-Hant">原生的；本地的</span><span class="ex">Native plants need less water than imported ones.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">decade</span><span class="zh" lang="zh-Hant">十年</span><span class="ex">The old tree has stood here for more than a decade.</span></button></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer>Generated for English learning purposes &nbsp;·&nbsp; <span lang="zh-Hant">植樹的好處</span></footer>
+
+<script>
+  document.querySelectorAll('.card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var open = card.getAttribute('aria-expanded') === 'true';
+      card.setAttribute('aria-expanded', open ? 'false' : 'true');
+    });
+  });
+</script>
+</body>
+</html>
