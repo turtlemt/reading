@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaccines and Dr. Edward Jenner</title>
+<style>
+  :root {
+    --bg: #f1f7f8;
+    --surface: #ffffff;
+    --ink: #10262e;
+    --muted: #4d6670;
+    --deep: #0a3442;
+    --teal: #136f7c;
+    --coral: #c9472d;
+    --line: #cfe1e5;
+    --header-text: #f1f7f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0a1d24;
+      --surface: #11303a;
+      --ink: #e3f0f2;
+      --muted: #9bb7bf;
+      --deep: #06151b;
+      --teal: #6ec3cf;
+      --coral: #ff8a70;
+      --line: #23505c;
+      --header-text: #e3f0f2;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 1rem; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Noto Serif TC", "PMingLiU", serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+  header {
+    background: var(--deep);
+    color: var(--header-text);
+    padding: 3.5rem 1.25rem 3rem;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; }
+  .category {
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: 0.95rem;
+    color: #8fd3dd;
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.15;
+    margin: 0 0 0.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .subtitle { margin: 0 0 1.5rem; color: #b9dde3; font-size: 1.05rem; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem;
+    margin: 0; padding: 1rem 0 0;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: 0.95rem;
+  }
+  .meta dt { display: inline; color: #8fd3dd; margin-right: 0.4rem; }
+  .meta dd { display: inline; margin: 0; }
+  main { padding: 2.5rem 1.25rem 1rem; }
+  article h2, .vocab h2 {
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    color: var(--teal);
+    margin: 2.5rem 0 0.5rem;
+    padding-left: 0.75rem;
+    border-left: 4px solid var(--coral);
+  }
+  article h2:first-child { margin-top: 0; }
+  article p { margin: 0 0 1rem; max-width: 40rem; }
+  .vocab { margin-top: 3.5rem; }
+  .vocab h2 { margin-top: 0; }
+  .hint { color: var(--muted); font-size: 0.95rem; margin: 0 0 1.25rem;
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    gap: 0.75rem;
+    align-items: start;
+    padding: 0; margin: 0; list-style: none;
+  }
+  .card {
+    width: 100%;
+    text-align: left;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    font: inherit;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  .card:hover { border-color: var(--teal); }
+  .card:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
+  .card .en { display: block; font-family: "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 1.1rem; }
+  .card .zh { display: block; color: var(--muted); font-size: 0.95rem; margin-top: 0.15rem; }
+  .card .ex {
+    display: none;
+    margin-top: 0.6rem; padding-top: 0.6rem;
+    border-top: 1px dashed var(--line);
+    font-size: 0.95rem; font-style: italic;
+  }
+  .card[aria-expanded="true"] { border-color: var(--teal); }
+  .card[aria-expanded="true"] .ex { display: block; }
+  footer {
+    max-width: 44rem; margin: 3rem auto 0; padding: 1.25rem 1.25rem 2.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 0.9rem; text-align: center;
+    font-family: "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="category">Medicine &amp; History</p>
+    <h1>Vaccines and Dr. Edward Jenner</h1>
+    <p class="subtitle">A junior-level English article on medicine and history — approx. 420 words</p>
+    <dl class="meta">
+      <div><dt>Topic</dt><dd>Vaccination</dd></div>
+      <div><dt>Chinese name</dt><dd lang="zh-Hant">預防注射與牛痘疫苗</dd></div>
+      <div><dt>Level</dt><dd>Junior high school</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article>
+      <h2>Introduction</h2>
+      <p>Have you ever had a shot at school or at a clinic? Many of these shots are vaccines. A vaccine does not cure a disease. Instead, it helps your body get ready before the disease arrives. This idea is called prevention, and it has saved millions of lives. The story of the first vaccine began more than 200 years ago with a country doctor in England.</p>
+
+      <h2>How a Vaccine Works</h2>
+      <p>Your immune system protects you from germs. When a new germ enters your body, the immune system learns to fight it by making antibodies. This takes time, so a dangerous germ can make you very sick before your body is ready. A vaccine shows the immune system a weak or harmless piece of the germ. The body practices fighting it and remembers how. Later, if the real germ appears, the body can respond quickly. When many people are vaccinated, the disease also has a hard time spreading to those who cannot be vaccinated.</p>
+
+      <h2>A Deadly Disease</h2>
+      <p>In the 1700s, smallpox was one of the most feared diseases in the world. It caused high fevers and painful sores, and many patients died. Those who survived often had scars for life. Doctors had no real cure.</p>
+
+      <h2>Edward Jenner’s Discovery</h2>
+      <p>Edward Jenner was a doctor in the English countryside. He noticed that milkmaids who had caught cowpox, a mild disease from cows, seldom caught smallpox. He believed that cowpox might protect people from the deadly disease.</p>
+      <p>In May 1796, Jenner tested his idea. He took fluid from a cowpox sore on a milkmaid named Sarah Nelmes and put it into small cuts on the arm of James Phipps, an eight-year-old boy. The boy had a mild illness and quickly got better. Weeks later, Jenner exposed the boy to smallpox. The boy did not get sick. Jenner’s idea worked. He later published his results, and the method spread across Europe and the world.</p>
+
+      <h2>A Disease Defeated</h2>
+      <p>The word “vaccine” comes from the Latin word <em>vacca</em>, which means cow. Over time, countries ran large vaccination programs. In 1980, the World Health Organization announced that smallpox had been wiped out. It remains the only human disease that has been completely eradicated.</p>
+
+      <h2>Conclusion</h2>
+      <p>Jenner’s experiment would not be allowed today, because modern science has strict rules to protect patients. However, his careful observation changed medicine forever. Today, vaccines protect us from many serious diseases. The next time you get a shot, remember that it is the result of a long journey that began with a curious doctor and a milkmaid.</p>
+    </article>
+
+    <section class="vocab" aria-labelledby="vocab-title">
+      <h2 id="vocab-title">Key Vocabulary</h2>
+      <p class="hint">點擊單字卡展開例句 — Click a card to see an example sentence</p>
+      <ul class="cards">
+        <li><button class="card" aria-expanded="false"><span class="en">vaccine</span><span class="zh" lang="zh-Hant">疫苗</span><span class="ex">The vaccine protects children from a serious illness.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">prevention</span><span class="zh" lang="zh-Hant">預防</span><span class="ex">Washing your hands is a simple form of prevention.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">immune system</span><span class="zh" lang="zh-Hant">免疫系統</span><span class="ex">Sleep and healthy food help your immune system.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">antibody</span><span class="zh" lang="zh-Hant">抗體</span><span class="ex">The body makes antibodies to fight germs.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">germ</span><span class="zh" lang="zh-Hant">病菌</span><span class="ex">Germs spread easily when people do not wash their hands.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">smallpox</span><span class="zh" lang="zh-Hant">天花</span><span class="ex">Smallpox was once a deadly disease.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">cowpox</span><span class="zh" lang="zh-Hant">牛痘</span><span class="ex">Cowpox is a mild disease that cows can catch.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">milkmaid</span><span class="zh" lang="zh-Hant">擠奶女工</span><span class="ex">The milkmaid got up early to take care of the cows.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">expose</span><span class="zh" lang="zh-Hant">使接觸；暴露</span><span class="ex">Do not expose the plants to too much cold.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">scar</span><span class="zh" lang="zh-Hant">疤痕</span><span class="ex">The cut left a small scar on his knee.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">eradicate</span><span class="zh" lang="zh-Hant">根除；消滅</span><span class="ex">Scientists hope to eradicate more diseases in the future.</span></button></li>
+        <li><button class="card" aria-expanded="false"><span class="en">observation</span><span class="zh" lang="zh-Hant">觀察</span><span class="ex">Careful observation helped her find the answer.</span></button></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer>Generated for English learning purposes &nbsp;·&nbsp; <span lang="zh-Hant">預防注射與詹納醫師</span></footer>
+
+<script>
+  document.querySelectorAll('.card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var open = card.getAttribute('aria-expanded') === 'true';
+      card.setAttribute('aria-expanded', open ? 'false' : 'true');
+    });
+  });
+</script>
+</body>
+</html>
